@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="stylesheet.css" >
+		<title></title>
+	</head>
+	<body>
+	  	<div class="imgcontainer">
+ 	   		<img src="http://wrm5sysfkg-flywheel.netdna-ssl.com/wp-content/uploads/2015/11/Horizon-Blue-Cross-Blue-Shield-to-Offer-Telehealth-Therapy-Services-via-AbilTo.png">
+ 		</div>
+
+ 		<!-- All possible answers for question 2 -->
+ 		<form action="AbilTo3.html">
+  		<div class="container">
+
+  			<h1>How do you feel?</h1>
+
+  			<br>
+
+  			<button type="Answer1">Energetic</button>
+
+  			<br>
+
+    		<button type="Answer2">Happy</button>
+
+    		<br>
+
+    		<button type="Answer3">Sad</button>
+
+    		<br>
+
+    		<button type="Answer4">Drowsy</button>
+
+    		<script language="javascript">
+
+				// 1. Create the button
+				var button1 = document.getElementsByTagName("button")[0];
+				var button2 = document.getElementsByTagName("button")[1];
+				var button3 = document.getElementsByTagName("button")[2];
+				var button4 = document.getElementsByTagName("button")[3];
+
+
+
+				// 3. Add event handler
+				button1.addEventListener ("click", function() {
+				  sessionStorage.setItem(2, "Energetic");
+				});
+
+				button2.addEventListener ("click", function() {
+				  sessionStorage.setItem(2, "Happy");
+				});
+
+				button3.addEventListener ("click", function() {
+				  sessionStorage.setItem(2, "Sad");
+				});
+
+				button4.addEventListener ("click", function() {
+				  sessionStorage.setItem(2, "Drowsy");
+				});
+
+			</script>
+
+  		</div>
+	</form>
+	</body>
+</html>

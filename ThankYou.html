@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="stylesheet.css" >
+		<title></title>
+	</head>
+	<body>
+	  	<div class="imgcontainer">
+ 	   		<img src="http://wrm5sysfkg-flywheel.netdna-ssl.com/wp-content/uploads/2015/11/Horizon-Blue-Cross-Blue-Shield-to-Offer-Telehealth-Therapy-Services-via-AbilTo.png">
+ 		</div>
+
+ 		<!-- List of Your answers, no graphs needed, data accesible with sessionStorage -->
+ 		<form action="action_page.php">
+  		<div class="container">
+ 	   		<h1>Thank You!</h1>
+
+ 	   		<p>Here Are Your answers</p>
+ 	   		<ol id="listhere">
+ 	   		</ol>
+
+ 	   		<script language="javascript">
+
+				var li1 = document.createElement("li");
+				li1.innerHTML = sessionStorage.getItem(1);
+
+				var li2 = document.createElement("li");
+				li2.innerHTML = sessionStorage.getItem(2);
+
+				var li3 = document.createElement("li");
+				li3.innerHTML = sessionStorage.getItem(3);
+
+				var ol = document.getElementsByTagName("ol")[0];
+				ol.appendChild(li1);
+				ol.appendChild(li2);
+				ol.appendChild(li3);
+
+ 	   		</script>
+
+  		</div>
+	</form>
+	</body>
+</html>
